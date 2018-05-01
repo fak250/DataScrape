@@ -44,3 +44,10 @@ var file = new Blob([ comments_text.toString() ], { type: 'text/plain' });
 a.href = URL.createObjectURL(file);
 a.download = 'comments_text';
 a.click();
+
+
+//for comments scroll and loading
+var scroll = setInterval(function(){ window.scrollBy(0,1000); }, 2000);
+[].forEach.call(document.querySelectorAll("._ipm"), function(it){
+				it.click();
+			});
